@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptp.phamtanphat.animation1903.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageviewScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconscale"/>
+    <ImageView
+        android:layout_toRightOf="@id/imageviewScale"
+        android:id="@+id/imageviewAlpha"
+        android:src="@drawable/fish_bowl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@id/imageviewAlpha"
+        android:id="@+id/imageviewRotate"
+        android:src="@drawable/iconbell"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_below="@id/imageviewAlpha"
+        android:id="@+id/imageviewTranslate"
+        android:src="@drawable/car"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
